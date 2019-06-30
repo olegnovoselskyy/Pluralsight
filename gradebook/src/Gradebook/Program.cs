@@ -6,11 +6,19 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your name: ");
 
-            var name = Console.ReadLine();
+            if (args.Length > 0) {
+                Console.WriteLine($"Hello, {args[0]}!, It's a pleasure to meet you.");
+            }
+            else {
+                Console.WriteLine("I'm sorry, I didn't catch your name...");
+            }
 
-            Console.WriteLine("Hello " + name + "!");
+            // Console.WriteLine("Please enter your name: ");
+
+            // var name = Console.ReadLine();
+
+            // Console.WriteLine($"Hello {name}!");
         }
     }
 }
