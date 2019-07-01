@@ -7,15 +7,23 @@ namespace Gradebook
         static void Main(string[] args)
         {
 
-            var numbers = new double[3];
-            numbers[0] = 56.8;
-            numbers[1] = 345.6764;
-            numbers[2] = 41.9; 
+            var numbers = new [] {34.5, 12.4, 11.3, 6};
+            var result = 0.0;
+            var count = 0;
+            foreach (var number in numbers) {
+                count++;
+                result += number;
+                System.Console.WriteLine($"{count} loops elapsed...");
+            }
+            System.Console.WriteLine($"Here is the result: {result}");
+            // numbers[0] = 56.8;
+            // numbers[1] = 345.6764;
+            // numbers[2] = 41.9; 
 
             // double x = 36.78;
             // double y = 246.45;
 
-            Console.WriteLine($"{numbers[0]} + {numbers[1]} + {numbers[2]} = {numbers[0] + numbers[1] + numbers[2]}");
+            // Console.WriteLine($"{numbers[0]} + {numbers[1]} + {numbers[2]} = {numbers[0] + numbers[1] + numbers[2]}");
 
             if (args.Length > 0) {
                 Console.WriteLine($"Hello, {args[0]}!, It's a pleasure to meet you.");
