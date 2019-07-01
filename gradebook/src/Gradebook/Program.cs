@@ -25,7 +25,7 @@ namespace Gradebook
                 result += grade;
                 System.Console.WriteLine($"{count} loops elapsed...");
             }
-             Console.WriteLine($"Here is the average of all the grades: {result / count}");
+             Console.WriteLine($"Here is the average of all the grades: {result / grades.Count}");
             // numbers[0] = 56.8;
             // numbers[1] = 345.6764;
             // numbers[2] = 41.9; 
