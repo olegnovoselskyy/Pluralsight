@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Book;
 
 namespace Gradebook
 {
@@ -26,6 +27,9 @@ namespace Gradebook
                 System.Console.WriteLine($"{count} loops elapsed...");
             }
              Console.WriteLine($"Here is the average of all the grades: {result / grades.Count}");
+
+            var book = new GradeBookMath();
+
             // numbers[0] = 56.8;
             // numbers[1] = 345.6764;
             // numbers[2] = 41.9; 
@@ -35,12 +39,12 @@ namespace Gradebook
 
             // Console.WriteLine($"{numbers[0]} + {numbers[1]} + {numbers[2]} = {numbers[0] + numbers[1] + numbers[2]}");
 
-            if (args.Length > 0) {
-                Console.WriteLine($"Hello, {args[0]}!, It's a pleasure to meet you.");
-            }
-            else {
-                Console.WriteLine("I'm sorry, I didn't catch your name...");
-            }
+            // if (args.Length > 0) {
+            //     Console.WriteLine($"Hello, {args[0]}!, It's a pleasure to meet you.");
+            // }
+            // else {
+            //     Console.WriteLine("I'm sorry, I didn't catch your name...");
+            // }
 
             // Console.WriteLine("Please enter your name: ");
 
