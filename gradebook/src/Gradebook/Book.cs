@@ -1,8 +1,8 @@
 using System;
 
-namespace Book
+namespace GradeBook
 {
-    class GradeBookMath {
+    class Book {
 
     }
 }

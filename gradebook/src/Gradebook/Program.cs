@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Book;
+using GradeBook;
 
 namespace Gradebook
 {
@@ -28,7 +28,7 @@ namespace Gradebook
             }
              Console.WriteLine($"Here is the average of all the grades: {result / grades.Count}");
 
-            var book = new GradeBookMath();
+            var book = new Book();
 
             // numbers[0] = 56.8;
             // numbers[1] = 345.6764;
