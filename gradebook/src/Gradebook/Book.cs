@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace GradeBook
 {
     class Book {
-        public List<double> list = new List<double>();
+        private List<double> list = new List<double>();
 
         public void AddGrade(double grade) {
 
