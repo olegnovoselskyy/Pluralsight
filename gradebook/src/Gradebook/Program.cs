@@ -11,8 +11,28 @@ namespace Gradebook
            
             var book = new Book();
             book.AddGrade(23.4);
-            book.AddGrade(12.2);
-            Console.WriteLine(book.Count());
+            book.AddGrade(56.2);
+            book.AddGrade(78.4);
+            book.AddGrade(88.6);
+            book.AddGrade(88.4);
+            book.AddGrade(93.2);
+            book.AddGrade(98);
+            book.AddGrade(12.3);
+            book.AddGrade(11);
+            book.AddGrade(22.7);
+            book.AddGrade(14.2);
+            book.AddGrade(10.9);
+            book.AddGrade(67.4);
+            book.AddGrade(75);
+
+            var count = book.Count();
+            var average = book.GetAverageGrade();
+            var high = book.GetHighestGrade();
+            var low = book.GetLowestGrade();
+
+            Console.WriteLine($"There are {count} grades recorded. The average is {average:N2}, the highest grade is {high} and the lowest is {low}");
+            
+
 
             #region Old Code
             // var numbers = new [] {34.5, 12.4, 11.3, 6};
