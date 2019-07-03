@@ -26,7 +26,7 @@ namespace GradeBook
             foreach (var grade in grades) {
 
                 highGrade = Math.Max(grade, highGrade);
-                
+
                 // if (grade > highGrade) {
                 //     highGrade = grade;
                 // }
@@ -55,6 +55,15 @@ namespace GradeBook
                 average += grade;
             }
             return average / grades.Count;
+        }
+
+        public void ShowStats() {
+             var count = Count();
+            var average = GetAverageGrade();
+            var high = GetHighestGrade();
+            var low = GetLowestGrade();
+
+             Console.WriteLine($"There are {count} grades recorded. The average is {average:N2}, the highest grade is {high} and the lowest is {low}");
         }
     }
 }

@@ -24,13 +24,8 @@ namespace Gradebook
             book.AddGrade(10.9);
             book.AddGrade(67.4);
             book.AddGrade(75);
-
-            var count = book.Count();
-            var average = book.GetAverageGrade();
-            var high = book.GetHighestGrade();
-            var low = book.GetLowestGrade();
-
-            Console.WriteLine($"There are {count} grades recorded. The average is {average:N2}, the highest grade is {high} and the lowest is {low}");
+            book.ShowStats();
+           
             
 
 
