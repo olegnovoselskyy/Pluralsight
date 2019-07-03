@@ -24,9 +24,12 @@ namespace GradeBook
             var highGrade = double.MinValue;
 
             foreach (var grade in grades) {
-                if (grade > highGrade) {
-                    highGrade = grade;
-                }
+
+                highGrade = Math.Max(grade, highGrade);
+                
+                // if (grade > highGrade) {
+                //     highGrade = grade;
+                // }
             }
             return highGrade;
         }
@@ -35,9 +38,12 @@ namespace GradeBook
             var lowGrade = double.MaxValue;
 
             foreach (var grade in grades) {
-                if (grade < lowGrade) {
-                    lowGrade = grade;
-                }
+
+                lowGrade = Math.Min(grade, lowGrade);
+
+                // if (grade < lowGrade) {
+                //     lowGrade = grade;
+                // }
             }
             return lowGrade;
         }
