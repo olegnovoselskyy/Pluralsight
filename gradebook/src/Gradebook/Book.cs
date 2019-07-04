@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    class Book {
+    public class Book {
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
 
