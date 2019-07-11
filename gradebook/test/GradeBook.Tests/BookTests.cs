@@ -16,18 +16,18 @@ namespace GradeBook.Tests
 
            // arrange
            var book = new Book();
-            book.AddGrade(78.9);
-            book.AddGrade(99.6);
-            book.AddGrade(45.3);
+            book.AddGrade(67.9);
+            book.AddGrade(13.4);
+
 
            // act
            var result = book.GetStats();
            
 
            // assert
-            Assert.Equal(85.6, result.Average);
-            Assert.Equal(75.6, result.High);
-            Assert.Equal(35.6, result.Low);
+            Assert.Equal(40.7, result.Average, 1);
+            Assert.Equal(25, result.High, 1);
+            Assert.Equal(25, result.Low, 1);
           
         }
     }
