@@ -12,3 +12,6 @@ C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.AssemblyInfo.cs
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.dll
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.pdb
+C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\Gradebook.dll
+C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\Gradebook.pdb
+C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.csproj.CopyComplete
