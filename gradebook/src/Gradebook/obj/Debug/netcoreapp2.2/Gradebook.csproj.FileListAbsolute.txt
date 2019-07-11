@@ -9,3 +9,14 @@ C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\src\Gradebook\o
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.AssemblyInfo.cs
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.dll
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.pdb
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\bin\Debug\netcoreapp2.2\Gradebook.deps.json
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\bin\Debug\netcoreapp2.2\Gradebook.runtimeconfig.json
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\bin\Debug\netcoreapp2.2\Gradebook.runtimeconfig.dev.json
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\bin\Debug\netcoreapp2.2\Gradebook.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\bin\Debug\netcoreapp2.2\Gradebook.pdb
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.csprojAssemblyReference.cache
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.csproj.CoreCompileInputs.cache
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.AssemblyInfoInputs.cache
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.AssemblyInfo.cs
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\src\Gradebook\obj\Debug\netcoreapp2.2\Gradebook.pdb

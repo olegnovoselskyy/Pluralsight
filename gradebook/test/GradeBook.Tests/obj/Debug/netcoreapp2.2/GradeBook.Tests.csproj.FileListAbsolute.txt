@@ -12,3 +12,20 @@ C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.AssemblyInfo.cs
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.dll
 C:\Users\Oleg Novoselskyy\Documents\GitHub\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.pdb
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.Tests.deps.json
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.Tests.runtimeconfig.json
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.Tests.runtimeconfig.dev.json
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.Tests.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.Tests.pdb
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\Gradebook.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\Gradebook.pdb
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.csprojAssemblyReference.cache
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.csproj.CoreCompileInputs.cache
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.AssemblyInfoInputs.cache
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.AssemblyInfo.cs
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.csproj.CopyComplete
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.dll
+C:\users\amid2\source\repos\Pluralsight\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.pdb

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj": {}
+    "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj": {
+    "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
-        "projectName": "GradeBook.Tests",
-        "projectPath": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
-        "packagesPath": "C:\\Users\\Oleg Novoselskyy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\obj\\",
+        "projectUniqueName": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "projectName": "Gradebook",
+        "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "packagesPath": "C:\\Users\\amid2\\.nuget\\packages\\",
+        "outputPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Oleg Novoselskyy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amid2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,6 +30,62 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj",
+        "projectName": "GradeBook.Tests",
+        "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj",
+        "packagesPath": "C:\\Users\\amid2\\.nuget\\packages\\",
+        "outputPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\amid2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj": {
+                "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
