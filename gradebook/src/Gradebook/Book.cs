@@ -66,6 +66,17 @@ namespace GradeBook
              Console.WriteLine($"There are {count} grades recorded. The average is {average:N2}, the highest grade is {high} and the lowest is {low}");
         }
 
+          public Statistics GetStats() { 
+
+            var stats = new Statistics();          
+            stats.Average = GetAverageGrade();
+            stats.High = GetHighestGrade();
+            stats.Low = GetLowestGrade();
+
+            return stats;
+        }
+
+
           public void JiraTest() {
              Console.WriteLine("This is a test of the JIRA trackiong software");
         }
