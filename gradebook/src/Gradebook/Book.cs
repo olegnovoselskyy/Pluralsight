@@ -67,7 +67,11 @@ namespace GradeBook
         }
 
           public void JiraTest() {
-             Console.WriteLine("This is a test of the JIRA trackiong software");
+             Console.WriteLine("This is a test of the JIRA tracking software");
+        }
+
+                  public void DimaBranchTest() {
+             Console.WriteLine("This is a test of the JIRA tracking software");
         }
     }
 }
