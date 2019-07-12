@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj": {}
+    "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {}
   },
   "projects": {
-    "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj": {
+    "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "projectUniqueName": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\src\\Gradebook\\Gradebook.csproj",
         "projectName": "Gradebook",
-        "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\src\\Gradebook\\Gradebook.csproj",
         "packagesPath": "C:\\Users\\amid2\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\obj\\",
+        "outputPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\src\\Gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj": {
+    "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj",
-        "projectName": "GradeBook.Tests",
-        "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\GradeBook.Tests.csproj",
+        "projectUniqueName": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
+        "projectName": "Gradebook.Tests",
+        "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
         "packagesPath": "C:\\Users\\amid2\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\test\\Gradebook.Tests\\obj\\",
+        "outputPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj": {
-                "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\Gradebook\\src\\Gradebook\\Gradebook.csproj"
+              "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
+                "projectPath": "C:\\users\\amid2\\source\\repos\\Pluralsight\\gradebook\\src\\Gradebook\\Gradebook.csproj"
               }
             }
           }
