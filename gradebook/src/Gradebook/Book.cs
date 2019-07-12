@@ -76,13 +76,5 @@ namespace GradeBook
 
             return result;
         }
-
-        public void JiraTest() {
-             Console.WriteLine("This is a test of the JIRA tracking software");
-        }
-
-        public void DimaBranchTest() {
-             Console.WriteLine("This is a test of the JIRA branching software");
-        }
     }
 }
