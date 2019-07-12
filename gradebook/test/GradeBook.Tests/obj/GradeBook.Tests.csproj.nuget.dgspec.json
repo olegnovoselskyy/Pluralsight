@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj": {}
+    "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj": {
+    "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
-        "projectName": "GradeBook.Tests",
-        "projectPath": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
+        "projectName": "Gradebook.Tests",
+        "projectPath": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
         "packagesPath": "C:\\Users\\Oleg Novoselskyy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\GradeBook.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Oleg Novoselskyy\\Documents\\GitHub\\Pluralsight\\gradebook\\test\\Gradebook.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
