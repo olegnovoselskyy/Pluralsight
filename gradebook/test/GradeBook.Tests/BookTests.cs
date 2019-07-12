@@ -15,7 +15,7 @@ namespace GradeBook.Tests
             // Assert.Equal(15, y);
 
            // arrange
-           var book = new Book();
+           var book = new Book("Book2");
             book.AddGrade(67.9);
             book.AddGrade(13.4);
 
