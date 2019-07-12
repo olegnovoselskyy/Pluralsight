@@ -24,6 +24,7 @@ namespace GradeBook.Tests
             var book2 = book1;
 
             Assert.Same(book1, book2);
+            Assert.Same(book1, book2);
             Assert.True(Object.ReferenceEquals(book1, book2));
         }
 
