@@ -19,7 +19,6 @@ namespace GradeBook.Tests
             book.AddGrade(67.9);
             book.AddGrade(13.4);
 
-
            // act
            var result = book.GetStats();
            
@@ -28,6 +27,7 @@ namespace GradeBook.Tests
             Assert.Equal(40.7, result.Average, 1);
             Assert.Equal(25, result.High, 1);
             Assert.Equal(25, result.Low, 1);
+            Assert.Equal(25, 25);
           
         }
     }
