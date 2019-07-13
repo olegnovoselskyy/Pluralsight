@@ -8,39 +8,34 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Please enter grades for your gradebook, enter 'Q' to abort");
-                       
+                                   
             var book = new Book("Book1");
-            var input = Console.ReadLine();
-            while (input != "Q")
+
+            while (true)
             {
-                try 
+                Console.WriteLine("Please enter grades for your gradebook, enter 'Q' to abort");
+                var input = Console.ReadLine();
+                
+                if (input == "Q" && book.Count() > 0)
                 {
+                    book.ShowStats();
+                    break;
+                }
+
+                try 
+                {                                                 
                     var parser = Convert.ToDouble(input);
-                    if (book.AddGrade(parser))
-                    {
-                        input = Console.ReadLine();
-                        continue;
-                    }
-                    else 
-                    {
-                        break;
-                    }
+                    book.AddGrade(parser);
+                                  
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Well here's your problem! : {ex}");
                     Console.WriteLine("Caught you!");
-                    break;
-                }
-
+                }                
             }
 
-            if (input == "Q" && book.Count() > 0)
-            {
-                book.ShowStats();
-            }
+
             
             // Just some bad attempt at humor
             // if (book.Count() == 0)
