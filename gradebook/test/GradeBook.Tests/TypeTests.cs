@@ -6,7 +6,18 @@ namespace GradeBook.Tests
 {
     public class TypeTests
     {
+        [Fact]
+        public void Test1()
+        {
+            var x = GetInt();
 
+            Assert.Equal(3, GetInt());
+        }
+
+        private int GetInt()
+        {
+            return 3;
+        }
 
         [Fact]
         public void CsharpPassByRef()
