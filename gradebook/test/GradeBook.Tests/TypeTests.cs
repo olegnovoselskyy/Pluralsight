@@ -14,6 +14,7 @@ namespace GradeBook.Tests
 
             Assert.Equal("New Name", book1.Name);
             Assert.Equal("New Name", book1.Name);
+             Assert.Equal("New Name", book1.Name);
         }
 
         private void SetName(Book book, string name)
