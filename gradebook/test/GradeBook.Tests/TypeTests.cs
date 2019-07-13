@@ -9,6 +9,20 @@ namespace GradeBook.Tests
 
 
         [Fact]
+        public void CsharpPassByRef()
+        {  
+            var book1 = GetBook("Book 1");
+            GetRefBookSetName(ref book1, "New Name");
+
+            Assert.Equal("New Name", book1.Name);
+        }
+
+        private void GetRefBookSetName(ref Book book, string name)
+        {
+            book = new Book(name);
+        }
+
+        [Fact]
         public void CsharpIsPassByValue()
         {  
             var book1 = GetBook("Book 1");
