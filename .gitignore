@@ -8,9 +8,9 @@
 *.so
 *.pdb
 
-[Db]ebug
-[Bb]in
-[Oo]bj
+[Db]ebug/
+[Bb]in/
+[Oo]bj/
 
 # Packages #
 ############
