@@ -13,9 +13,20 @@ namespace GradeBook
             Name = name;
         }
 
-        public void AddGrade(double grade) {
+        public bool AddGrade(double grade) 
+        {
+            var returnValue = false;
 
-            grades.Add(grade);
+            if (grade >= 0 && grade <= 100) 
+            {
+                grades.Add(grade);
+                returnValue = true;
+            }
+            else 
+            {
+                Console.WriteLine("Invalid value.");
+            }
+            return returnValue;
         }
 
         public int Count() {

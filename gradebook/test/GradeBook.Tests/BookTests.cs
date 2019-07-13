@@ -30,5 +30,14 @@ namespace GradeBook.Tests
             Assert.Equal(25, 25);
           
         }
+
+        [Fact]
+        public void CorrectValueInGrade()
+        {
+            var book = new Book("Gradebook");
+        
+            Assert.True(book.AddGrade(89.7));
+
+        }
     }
 }
