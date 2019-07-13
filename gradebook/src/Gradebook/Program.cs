@@ -15,9 +15,8 @@ namespace Gradebook
             
             var book = new Book("Book1");
             var input = Console.ReadLine();
-            do
+            while (input != "Q")
             {
-
                 var parser = Convert.ToDouble(input);
                 if (book.AddGrade(parser))
                 {
@@ -28,14 +27,17 @@ namespace Gradebook
                 {
                     break;
                 }
-                
             }
-            while (input != "Q");
 
-            if (input == "Q")
+            if (input == "Q" && book.Count() > 0)
             {
                 book.ShowStats();
             }
+
+            if (book.Count() == 0)
+            {
+                Console.WriteLine("Ok my bad.... Jeez");
+            }           
 
             #region Old Code
             
