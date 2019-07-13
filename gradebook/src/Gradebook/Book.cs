@@ -13,9 +13,20 @@ namespace GradeBook
             Name = name;
         }
 
-        public void AddGrade(double grade) {
+        public bool AddGrade(double grade) 
+        {
+            var returnValue = false;
 
-            grades.Add(grade);
+            if (grade >= 0 && grade <= 100) 
+            {
+                grades.Add(grade);
+                returnValue = true;
+            }
+            else 
+            {
+                Console.WriteLine("Invalid value.");
+            }
+            return returnValue;
         }
 
         public int Count() {
@@ -56,6 +67,7 @@ namespace GradeBook
             foreach (var grade in grades) {
                 average += grade;
             }
+                       
             return average / grades.Count;
         }
 
@@ -74,6 +86,29 @@ namespace GradeBook
             stats.Average = GetAverageGrade();
             stats.High = GetHighestGrade();
             stats.Low = GetLowestGrade();
+
+            switch (stats.Average) 
+            {
+                case var d when d >= 90.0:
+                    stats.Letter = 'A';
+                    break;
+
+                case var d when d >= 80.0:
+                    stats.Letter = 'B';
+                    break;
+
+                case var d when d >= 70.0:
+                    stats.Letter = 'C';
+                    break;
+
+                case var d when d >= 60.0:
+                    stats.Letter = 'D';
+                    break;
+
+                default:
+                    stats.Letter = 'F';
+                    break;
+            }
 
             return stats;
         }

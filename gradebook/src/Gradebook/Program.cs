@@ -8,28 +8,64 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-           
-            var book = new Book("Book1");
-            book.AddGrade(23.4);
-            book.AddGrade(56.2);
-            book.AddGrade(78.4);
-            book.AddGrade(88.6);
-            book.AddGrade(88.4);
-            book.AddGrade(93.2);
-            book.AddGrade(98);
-            book.AddGrade(12.3);
-            book.AddGrade(11);
-            book.AddGrade(22.7);
-            book.AddGrade(14.2);
-            book.AddGrade(10.9);
-            book.AddGrade(67.4);
-            book.AddGrade(75);
-            book.ShowStats();
-           
             
+            Console.WriteLine("Please enter grades for your gradebook, enter 'Q' to abort");
+                       
+            var book = new Book("Book1");
+            var input = Console.ReadLine();
+            while (input != "Q")
+            {
+                try 
+                {
+                    var parser = Convert.ToDouble(input);
+                    if (book.AddGrade(parser))
+                    {
+                        input = Console.ReadLine();
+                        continue;
+                    }
+                    else 
+                    {
+                        break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Well here's your problem! : {ex}");
+                    Console.WriteLine("Caught you!");
+                    break;
+                }
 
+            }
+
+            if (input == "Q" && book.Count() > 0)
+            {
+                book.ShowStats();
+            }
+            
+            // Just some bad attempt at humor
+            // if (book.Count() == 0)
+            // {
+            //     Console.WriteLine("Ok my bad.... Jeez");
+            // }           
 
             #region Old Code
+            
+            // book.AddGrade(23.4);
+            // book.AddGrade(56.2);
+            // book.AddGrade(78.4);
+            // book.AddGrade(88.6);
+            // book.AddGrade(88.4);
+            // book.AddGrade(93.2);
+            // book.AddGrade(98);
+            // book.AddGrade(12.3);
+            // book.AddGrade(11);
+            // book.AddGrade(22.7);
+            // book.AddGrade(14.2);
+            // book.AddGrade(10.9);
+            // book.AddGrade(67.4);
+            // book.AddGrade(75);
+            // book.ShowStats();
+
             // var numbers = new [] {34.5, 12.4, 11.3, 6};
             // var result = 0.0;
             // var count = 0;
