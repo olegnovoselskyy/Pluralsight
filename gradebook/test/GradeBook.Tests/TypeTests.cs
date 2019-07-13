@@ -12,12 +12,12 @@ namespace GradeBook.Tests
         public void CsharpPassByRef()
         {  
             var book1 = GetBook("Book 1");
-            GetRefBookSetName(ref book1, "New Name");
+            GetRefBookSetName(out book1, "New Name"); // can also use 'out' insteaf of 'ref' the C# compilier thinks that the 'out' param ahs not been initliazed
 
             Assert.Equal("New Name", book1.Name);
         }
 
-        private void GetRefBookSetName(ref Book book, string name)
+        private void GetRefBookSetName(out Book book, string name) // ref does not need to be initiliazed
         {
             book = new Book(name);
         }
