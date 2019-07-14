@@ -25,7 +25,7 @@ namespace Gradebook
 
                 if (input == "Q") //&& book.Count() > 0
                 {
-                   // book.ShowStats();
+                
                     break;
                 }
 
@@ -45,6 +45,7 @@ namespace Gradebook
                     Console.WriteLine("Finally...");
                 }
             }
+               // book.ShowStats();
         }
     }
 }

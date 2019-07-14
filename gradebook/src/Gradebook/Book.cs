@@ -171,13 +171,12 @@ namespace GradeBook
         {
         }
 
-        string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public event GradeAddedDelegate GradeAdded;
 
         public override void AddGrade(double grade)
         {
-           File.AppendText($"");        
+           var writer = File.AppendText($"{Name}.txt");
+           writer.WriteLine(grade);        
         }
 
         public Statistics GetStats()
