@@ -91,7 +91,7 @@ namespace Gradebook
 
                 if (input == "q")
                 {
-                    break;
+                    book.GetStats();
                 }
 
                 try
