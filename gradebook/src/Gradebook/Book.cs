@@ -9,19 +9,34 @@ namespace GradeBook
 
     public class NamedObject 
     {
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+
         public string Name { get; set; }
     }
 
-    public class Book : NamedObject {
+    public abstract class BookBase : NamedObject
+    {
+        public BookBase(string name) : base(name)
+        {
+        }
+
+        public abstract void AddGrade(double grade);
+
+    }
+    public class Book : BookBase {
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
 
-        public Book(string name) {
+        public Book(string name) : base(name)
+        {
             grades = new List<double>();
             Name = name;
         }
 
-        public void AddGrade(double grade) 
+        public override void AddGrade(double grade) 
         {
 
             if (grade >= 0 && grade <= 100) 
