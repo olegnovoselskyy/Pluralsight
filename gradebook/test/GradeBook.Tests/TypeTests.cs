@@ -4,20 +4,102 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
+    public delegate string WriteLogDelegate(string logMessage);
+
     public class TypeTests
     {
+        int count = 0;
+
         [Fact]
-        public void SetBookName()
+        public void WriteLogDelegateCanPointToMethod(){
+            WriteLogDelegate log = ReturnMessage;
+            log += ReturnMessage;
+            log += IncrementCount;
+
+            var result = log("Hello");
+            Assert.Equal(3, count);
+        }
+
+        
+        string IncrementCount(string message){
+            count++;      
+            return message.ToLower();
+        }
+
+        string ReturnMessage(string message){
+            count++;
+            return message;
+        }
+
+        [Fact]
+        public void ValueTypesAlsoPassByValue() {
+            var x = GetInt();
+            SetInt(ref x);
+            
+            Assert.Equal(42, x);
+        }
+
+        private void SetInt(ref int z)
+        {
+            z = 42;
+        }
+
+        private int GetInt()
+        {
+            return 3;
+        }
+
+        [Fact]
+        public void CSharpCanPassByRef()
         {   
            var book1 = GetBook("Book 1");
-           SetName(book1, "New Name");
+           GetBookSetName(ref book1, "New Name");
 
            Assert.Equal("New Name", book1.Name);     
         }
 
-        private void SetName(Book book, string name)
+        private void GetBookSetName(ref Book book, string name)
+        {   
+            book = new Book(name);
+        }
+
+        [Fact]
+        public void CSharpIsPassByValue()
+        {   
+           var book1 = GetBook("Book 1");
+           GetBookSetName(book1, "New Name");
+
+           Assert.Equal("Book 1", book1.Name);     
+        }
+
+        private void GetBookSetName(Book book, string name)
+        {   
+            book = new Book(name);
+            book.SetName(book, name);
+        }
+
+        [Fact]
+        public void CanSetNameFromReference()
+        {   
+           var book1 = GetBook("Book 1");
+           book1.SetName(book1, "New Name");
+
+           Assert.Equal("New Name", book1.Name);     
+        }
+
+        [Fact]
+        public void StringsBehaveLikeValueTypes() 
         {
-            book.Name = name;
+            string name = "Petrie";
+            var upper = MakeUpperCase(name);
+
+            Assert.Equal("Petrie", name);
+            Assert.Equal("PETRIE", upper); 
+        }
+
+        private string MakeUpperCase(string parameter)
+        {
+            return parameter.ToUpper();
         }
 
         [Fact]

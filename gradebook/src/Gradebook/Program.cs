@@ -10,23 +10,54 @@ namespace Gradebook
         {
            
             var book = new Book("Grades");
-            book.AddGrade(23.4);
-            book.AddGrade(56.2);
-            book.AddGrade(78.4);
-            book.AddGrade(88.6);
-            book.AddGrade(88.4);
-            book.AddGrade(93.2);
-            book.AddGrade(98);
-            book.AddGrade(12.3);
-            book.AddGrade(11);
-            book.AddGrade(22.7);
-            book.AddGrade(14.2);
-            book.AddGrade(10.9);
-            book.AddGrade(67.4);
-            book.AddGrade(75);
-            book.ShowStats();
+            book.GradeAdded += OnGradeAdded;
+
+            Console.WriteLine("Name your book");
+            var bookname = Console.ReadLine();
+
+            try {
+            book.SetName(book, bookname);
+            }
+            catch(NullReferenceException ex){
+                Console.WriteLine(ex.Message);
+            }
+
+            while(true)
+            {   
+                Console.WriteLine("Enter a grade or 'q' to quit");
+                var input = Console.ReadLine();
+                
+                if(input == "q"){
+                    break;
+                }
+                
+                try {
+                    var grade = double.Parse(input);
+                    book.AddGrade(grade);
+                }
+                catch(ArgumentException ex) {
+                    Console.WriteLine(ex.Message);
+                }
+                catch(FormatException ex){
+                    Console.Write(ex.Message);
+                }
+                catch(NullReferenceException ex){
+                    Console.WriteLine(ex.Message);
+                }
+                finally{
+                    Console.WriteLine("**");
+                }
+
+            }
            
+            var stats = book.GetStats();
             
+            Console.WriteLine($"{Book.OWNER} {book.Name} book:");
+            Console.WriteLine($"The highest grade is: {stats.high}");
+            Console.WriteLine($"The lowest grade is: {stats.low}");
+            Console.WriteLine($"The average grade is: {stats.average:N1}");
+            Console.WriteLine($"The letter grade is: {stats.letter}");
+
 
 
             #region Old Code
@@ -73,6 +104,10 @@ namespace Gradebook
             #endregion 
 
            
+        }
+
+        static void OnGradeAdded(object sender, EventArgs e){
+            Console.WriteLine("Grade Added");
         }
     }
 }

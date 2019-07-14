@@ -27,8 +27,23 @@ namespace GradeBook.Tests
             Assert.Equal(99.6, result.high, 1);
             Assert.Equal(45.3, result.low, 1);
             Assert.Equal(74.6, result.average, 1);
+            Assert.Equal('C', result.letter);
 
           
         }
+//
+        //[Fact]
+        //public void BookValidatesGrade(){
+//
+        //    var book = new Book("Test Grades");
+//
+        //    book.AddGrade(100);
+        //    book.AddGrade(105);
+//
+        //    var result = book.GetStats();
+//
+        //    Assert.Equal(100, result.high);
+//
+        //}
     }
 }

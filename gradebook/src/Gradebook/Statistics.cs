@@ -5,5 +5,6 @@ namespace GradeBook
         public double average = 0.0;
         public double high = double.MaxValue;
         public double low = double.MinValue;
+        public char letter;
     }
 }
