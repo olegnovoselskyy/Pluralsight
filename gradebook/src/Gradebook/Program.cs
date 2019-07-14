@@ -10,7 +10,8 @@ namespace Gradebook
         {
                                    
             var book = new Book("Book1");
-
+            book.Name = "New Name";
+            
             while (true)
             {
                 Console.WriteLine("Please enter grades for your gradebook, enter 'Q' to abort");

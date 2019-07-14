@@ -6,10 +6,15 @@ namespace GradeBook
 
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
-    public class Book {
+
+    public class NamedObject 
+    {
+        public string Name { get; set; }
+    }
+
+    public class Book : NamedObject {
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
-        public string Name;
 
         public Book(string name) {
             grades = new List<double>();
