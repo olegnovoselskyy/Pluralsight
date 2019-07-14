@@ -32,6 +32,10 @@ namespace Gradebook
                 {
                     Console.WriteLine($"Well here's your problem! : {ex}");
                     Console.WriteLine("Caught you!");
+                }
+                finally 
+                {
+                    Console.WriteLine("Finally...");
                 }                
             }
 
