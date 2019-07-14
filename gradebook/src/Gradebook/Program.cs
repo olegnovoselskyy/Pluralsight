@@ -9,7 +9,7 @@ namespace Gradebook
         static void Main(string[] args)
         {
 
-            IBook book = new DiskBook("Disk");
+            var book = new DiskBook("Disk");
             book.Name = "New Name";
 
             EnterGrades(book);
@@ -45,7 +45,7 @@ namespace Gradebook
                     Console.WriteLine("Finally...");
                 }
             }
-               // book.ShowStats();
+                //book.ShowStats();
         }
     }
 }
