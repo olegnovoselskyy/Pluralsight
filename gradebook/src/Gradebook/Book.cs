@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace GradeBook
 {
@@ -25,14 +26,20 @@ namespace GradeBook
         event GradeAddedDelegate GradeAdded;
     }
 
-    public abstract class Book : NamedObject
+    public abstract class Book : NamedObject, IBook
     {
         public Book(string name) : base(name)
         {
         }
 
+        public event GradeAddedDelegate GradeAdded;
+
         public abstract void AddGrade(double grade);
 
+        public Statistics GetStats()
+        {
+            throw new NotImplementedException();
+        }
     }
     public class InMemoryBook : Book {
         //private List<double> grades = new List<double>(); // Could also be written like this
@@ -158,16 +165,19 @@ namespace GradeBook
 
     }
 
-    public class DiskBook : IBook
+    public class DiskBook : Book
     {
+        public DiskBook(string name) : base(name)
+        {
+        }
 
-        string IBook.Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public event GradeAddedDelegate GradeAdded;
 
-        public void AddGrade(double grade)
+        public override void AddGrade(double grade)
         {
-            throw new NotImplementedException();
+           File.AppendText($"");        
         }
 
         public Statistics GetStats()

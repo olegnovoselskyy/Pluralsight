@@ -9,7 +9,7 @@ namespace Gradebook
         static void Main(string[] args)
         {
 
-            IBook book = new DiskBook();
+            IBook book = new DiskBook("Disk");
             book.Name = "New Name";
 
             EnterGrades(book);
