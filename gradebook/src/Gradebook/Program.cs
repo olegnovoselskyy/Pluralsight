@@ -9,23 +9,23 @@ namespace Gradebook
         static void Main(string[] args)
         {
 
-            var book = new InMemoryBook("Book1");
+            IBook book = new DiskBook();
             book.Name = "New Name";
 
             EnterGrades(book);
 
         }
 
-        private static void EnterGrades(InMemoryBook book)
+        private static void EnterGrades(IBook book)
         {
             while (true)
             {
                 Console.WriteLine("Please enter grades for your gradebook, enter 'Q' to abort");
                 var input = Console.ReadLine();
 
-                if (input == "Q" && book.Count() > 0)
+                if (input == "Q") //&& book.Count() > 0
                 {
-                    book.ShowStats();
+                   // book.ShowStats();
                     break;
                 }
 

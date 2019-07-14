@@ -14,7 +14,15 @@ namespace GradeBook
             Name = name;
         }
 
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
+    }
+
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStats();
+        string Name { get; set; }
+        event GradeAddedDelegate GradeAdded;
     }
 
     public abstract class Book : NamedObject
@@ -149,4 +157,23 @@ namespace GradeBook
         public event GradeAddedDelegate GradeAdded;
 
     }
+
+    public class DiskBook : IBook
+    {
+
+        string IBook.Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public event GradeAddedDelegate GradeAdded;
+
+        public void AddGrade(double grade)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Statistics GetStats()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
 }
