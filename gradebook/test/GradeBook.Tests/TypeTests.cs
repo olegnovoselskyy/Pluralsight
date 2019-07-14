@@ -58,9 +58,9 @@ namespace GradeBook.Tests
            Assert.Equal("New Name", book1.Name);     
         }
 
-        private void GetBookSetName(ref Book book, string name)
+        private void GetBookSetName(ref InMemoryBook book, string name)
         {   
-            book = new Book(name);
+            book = new InMemoryBook(name);
         }
 
         [Fact]
@@ -72,9 +72,9 @@ namespace GradeBook.Tests
            Assert.Equal("Book 1", book1.Name);     
         }
 
-        private void GetBookSetName(Book book, string name)
+        private void GetBookSetName(InMemoryBook book, string name)
         {   
-            book = new Book(name);
+            book = new InMemoryBook(name);
             book.SetName(book, name);
         }
 
@@ -108,8 +108,8 @@ namespace GradeBook.Tests
            var book1 = GetBook("Book 1");
            var book2 = GetBook("Book 2");
 
-           var testBook1 = new Book("Book 1");
-           var testBook2 = new Book("Book 2");
+           var testBook1 = new InMemoryBook("Book 1");
+           var testBook2 = new InMemoryBook("Book 2");
 
            Assert.Equal(testBook1.Name, book1.Name);
            Assert.Equal(testBook2.Name, book2.Name);  
@@ -126,9 +126,9 @@ namespace GradeBook.Tests
            Assert.True(Object.ReferenceEquals(book1, book2));   
         }
 
-        Book GetBook(string name)
+        InMemoryBook GetBook(string name)
         {
-            return new Book(name);
+            return new InMemoryBook(name);
         }
     }
 }

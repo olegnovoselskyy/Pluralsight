@@ -8,51 +8,27 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-           
-            var book = new Book("Grades");
+
+            IBook book = new DiskBook("Grades");
             book.GradeAdded += OnGradeAdded;
 
             Console.WriteLine("Name your book");
             var bookname = Console.ReadLine();
 
-            try {
-            book.SetName(book, bookname);
+            try
+            {
+                book.SetName(book, bookname);
             }
-            catch(NullReferenceException ex){
+            catch (NullReferenceException ex)
+            {
                 Console.WriteLine(ex.Message);
             }
 
-            while(true)
-            {   
-                Console.WriteLine("Enter a grade or 'q' to quit");
-                var input = Console.ReadLine();
-                
-                if(input == "q"){
-                    break;
-                }
-                
-                try {
-                    var grade = double.Parse(input);
-                    book.AddGrade(grade);
-                }
-                catch(ArgumentException ex) {
-                    Console.WriteLine(ex.Message);
-                }
-                catch(FormatException ex){
-                    Console.Write(ex.Message);
-                }
-                catch(NullReferenceException ex){
-                    Console.WriteLine(ex.Message);
-                }
-                finally{
-                    Console.WriteLine("**");
-                }
+            EnterGrades(book);
 
-            }
-           
             var stats = book.GetStats();
-            
-            Console.WriteLine($"{Book.OWNER} {book.Name} book:");
+
+            Console.WriteLine($"{InMemoryBook.OWNER}'s {book.Name} book:");
             Console.WriteLine($"The highest grade is: {stats.high}");
             Console.WriteLine($"The lowest grade is: {stats.low}");
             Console.WriteLine($"The average grade is: {stats.average:N1}");
@@ -80,7 +56,7 @@ namespace Gradebook
             // }
             //  Console.WriteLine($"Here is the average of all the grades: {result / grades.Count}");
 
-             // numbers[0] = 56.8;
+            // numbers[0] = 56.8;
             // numbers[1] = 345.6764;
             // numbers[2] = 41.9; 
 
@@ -101,9 +77,46 @@ namespace Gradebook
             // var name = Console.ReadLine();
 
             // Console.WriteLine($"Hello {name}!");
-            #endregion 
+            #endregion
 
-           
+
+        }
+
+        private static void EnterGrades(IBook book)
+        {
+            while (true)
+            {
+                Console.WriteLine("Enter a grade or 'q' to quit");
+                var input = Console.ReadLine();
+
+                if (input == "q")
+                {
+                    break;
+                }
+
+                try
+                {
+                    var grade = double.Parse(input);
+                    book.AddGrade(grade);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                catch (FormatException ex)
+                {
+                    Console.Write(ex.Message);
+                }
+                catch (NullReferenceException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("**");
+                }
+
+            }
         }
 
         static void OnGradeAdded(object sender, EventArgs e){

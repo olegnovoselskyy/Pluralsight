@@ -5,15 +5,44 @@ namespace GradeBook
 {
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
-    public class Book {
-        public string Name { get; private set;}
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        void SetName(IBook book, string name);
+        Statistics GetStats();
 
-        public const string OWNER = "Dima's";
+        string Name {get; set;}
+        event GradeAddedDelegate GradeAdded;
+    }
+
+    public abstract class Book : NamedObject, IBook 
+    {
+        public Book(string name) : base(name) { }
+
+        public virtual event GradeAddedDelegate GradeAdded;
+
+        public abstract void AddGrade(double grade);
+
+        public virtual Statistics GetStats()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual void SetName(IBook book, string name)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class InMemoryBook : Book
+    {
+
+        public const string OWNER = "Dima";
 
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
 
-        public Book(string name) {            
+        public InMemoryBook(string name) : base(name) {            
             grades = new List<double>();
             Name = name;
         }
@@ -42,7 +71,7 @@ namespace GradeBook
             }       
         }
 
-        public void AddGrade(double grade) {
+        public override void AddGrade(double grade) {
             
             if (grade <= 100 && grade >= 0) {
                 grades.Add(grade);
@@ -105,9 +134,9 @@ namespace GradeBook
              Console.WriteLine($"There are {count} grades recorded. The average is {average:N2}, the highest grade is {high} and the lowest is {low}");
         }
 
-        public event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate GradeAdded;
 
-        public Statistics GetStats() {
+        public override Statistics GetStats() {
             var result = new Statistics();
             result.average =  GetAverageGrade();
             result.high = GetHighestGrade();
@@ -154,7 +183,7 @@ namespace GradeBook
             return result;
         }
 
-        public void SetName(Book book, string name)
+        public override void SetName(IBook book, string name)
         {
             if(!String.IsNullOrEmpty(name)) {
                 book.Name = name;
