@@ -15,7 +15,7 @@ namespace GradeBook.Tests
             // Assert.Equal(15, y);
 
            // arrange
-           var book = new Book("Book2");
+           var book = new InMemoryBook("Book2");
             book.AddGrade(67.9);
             book.AddGrade(83.4);
              book.AddGrade(88.4);
@@ -38,7 +38,7 @@ namespace GradeBook.Tests
         [Fact]
         public void CorrectValueInGrade()
         {
-            var book = new Book("Gradebook");
+            var book = new InMemoryBook("Gradebook");
         
             //Assert.True(book.AddGrade(89.7));
 

@@ -17,20 +17,20 @@ namespace GradeBook
         public string Name { get; set; }
     }
 
-    public abstract class BookBase : NamedObject
+    public abstract class Book : NamedObject
     {
-        public BookBase(string name) : base(name)
+        public Book(string name) : base(name)
         {
         }
 
         public abstract void AddGrade(double grade);
 
     }
-    public class Book : BookBase {
+    public class InMemoryBook : Book {
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
 
-        public Book(string name) : base(name)
+        public InMemoryBook(string name) : base(name)
         {
             grades = new List<double>();
             Name = name;

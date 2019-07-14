@@ -9,14 +9,14 @@ namespace Gradebook
         static void Main(string[] args)
         {
 
-            var book = new Book("Book1");
+            var book = new InMemoryBook("Book1");
             book.Name = "New Name";
 
             EnterGrades(book);
 
         }
 
-        private static void EnterGrades(Book book)
+        private static void EnterGrades(InMemoryBook book)
         {
             while (true)
             {
