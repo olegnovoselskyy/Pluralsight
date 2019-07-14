@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
     public class Book {
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
@@ -19,6 +22,10 @@ namespace GradeBook
             if (grade >= 0 && grade <= 100) 
             {
                 grades.Add(grade);
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else 
             {
@@ -118,5 +125,8 @@ namespace GradeBook
          public void  BranchTest() {
              Console.WriteLine("This is a test of the branches");
         }
+
+        public event GradeAddedDelegate GradeAdded;
+
     }
 }
