@@ -41,6 +41,23 @@ namespace GradeBook
             throw new NotImplementedException();
         }
     }
+
+    public abstract class BaseClass
+    {
+        public void MethodOne()
+        {
+
+        }
+         public void MethodTwo()
+        {
+
+        }
+    }
+
+    public class InheritedBaseClass : BaseClass
+    {
+        
+    }
     public class InMemoryBook : Book {
         //private List<double> grades = new List<double>(); // Could also be written like this
         private List<double> grades;
